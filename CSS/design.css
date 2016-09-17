@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body{
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto","sans-serif";
+	font-size: 18px;
+	
+}
+
+body.form-page{
+	background:url("Images/bac.jpg");
+	background-size: cover;
+}
+
+body.entry-page{
+	background:url("Images/bac-1-edit.jpg");
+	background-size: cover;
+	vertical-align: middle;
+}
+
+.nav{
+	font-size: 22px;
+}
+
+.nav ul {
+	float: right;
+	display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px; 
+    padding-right: 30px;
+}
+
+.nav li {
+    float: right;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.tag-line{
+	width: 100%;
+	position: absolute;
+	top: 36%;
+	margin: auto;
+	font-size: 50px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.tag-line p{
+	margin-bottom: 10px;
+}
+
+.tag-line button{
+	font-size: 18px;
+	width: 110px;
+ 	padding: 10px;
+ 	background-color: #004400;
+ 	outline: 0;
+ 	border: 0;
+ 	color: white; 
+}
+
+h1,p{
+	color: white;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+	text-decoration-line: none;
+}
+
+.form{
+	width: 360px;
+	margin: auto;
+	padding-top: 50px;
+	color: white;
+}
+
+
+.register-form,.login-form{
+	width: 360px;
+  	padding: 8% 0 0;
+  	margin: auto;
+ }
+
+.form button{
+	width: 200px;
+ 	padding: 15px;
+ 	background-color: #4CAF50;
+ 	outline: 0;
+ 	border: 0;
+ 	color: white;
+ }
+
+ .form input{
+ 	background-color: #f2f2f2;
+ 	box-sizing: border-box;
+ 	padding: 15px;
+ 	font-size: 14px;
+ 	border: 0;
+ 	color: #ffffff;
+ }
+
+a:hover{
+	text-decoration: underline;
+}
+
+
+ footer{
+ 	position: absolute;
+ }
