@@ -9,12 +9,12 @@ body{
 }
 
 body.form-page{
-	background:url("Images/bac.jpg");
+	background:url("E:/College/Sem-5/WTL/Projects/WTL_Project/Images/bac.jpg");
 	background-size: cover;
 }
 
 body.entry-page{
-	background:url("Images/bac-1-edit.jpg");
+	background:url("E:/College/Sem-5/WTL/Projects/WTL_Project/Images/bac-1-edit.jpg");
 	background-size: cover;
 	vertical-align: middle;
 }
