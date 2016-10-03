@@ -1,6 +1,7 @@
 <html>
   <head>
-    <title></title>
+    <title>Registration</title>
+    
     <link rel="stylesheet" type="text/css" href="E:\College\Sem-5\WTL\Projects\WTL_Project\CSS\design.css">
 
   </head>
@@ -18,24 +19,26 @@
     </header>
 
     <center>
-    <div class="form">
-      <form class="register-form" action="#">
-        <input type="text" placeholder="First Name"/><br><br>
-        <input type="text" placeholder="Last Name"/><br><br>
-        <input type="radio" name="gender" value="male" checked> Male
+    
+    <div class="forms">
+      <form name="myForm" class="register-form" action="#" onsubmit="return validateForm()">
+        <input type="text" name="fname" placeholder="First Name" /><br><br>
+        <input type="text" placeholder="Last Name" name="lname" /><br><br>
+        <input type="radio" name="gender" value="male"> Male
         <input type="radio" name="gender" value="female"> Female
         <input type="radio" name="gender" value="other"> Other<br><br>
         <input type="text" placeholder="Email address"/><br><br>
-        <input type="password" placeholder="Password"/><br><br>
-        <input type="password" placeholder="Confirm Password"/><br><br>
-        
-        <button>CREATE</button>
+        <input type="password" placeholder="Password" name="password" /><br><br>
+        <input type="password" placeholder="Confirm Password" name="cpassword" /><br><br>
+        <input type="submit" name="submit">
+        <!--<button type="submit" value="Submit">CREATE</button>-->
         <p class="message">Already registered? <a href="log.html">Sign In</a></p>
       </form>
-
-    </div>
+    </div>  
+    
     </center>
           
+    <script type="text/javascript" src="E:\College\Sem-5\WTL\Projects\WTL_Project\Javascript\javascript.js"></script>      
   </body>
 
 

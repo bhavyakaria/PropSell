@@ -17,16 +17,16 @@
     	</header>
 
     	<center>
-			<div class="form">
-				<form class="login-form">
-			        <input type="text" placeholder="username"/><br><br>
-			        <input type="password" placeholder="password"/><br><br>
-			        <button>LOGIN</button><br>
+			<div class="forms">
+				<form name="logForm" class="login-form" action="#" onsubmit="return validateForm()">
+			        <input type="text" placeholder="username" name="username"><br><br>
+			        <input type="password" placeholder="password" name="password" /><br><br>
+			        <input type="submit" name="submit">
 			        <p class="message">Not registered? <a href="reg.html" onclick="hide(2)">Create an account</a></p>
 		      	</form>
 			</div>
 		</center>
 	</body>
-	<footer>Created by Bhavya Karia,Akshay Karkera and Vinayak Gawde</footer>
+	
 </html>
 
