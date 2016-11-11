@@ -1,26 +1,41 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
-
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
 body{
 	padding: 0;
 	margin: 0;
 	font-family: "Roboto","sans-serif";
 	font-size: 18px;
-	
+
 }
 
-body.form-page{
-	background:url("E:/College/Sem-5/WTL/Projects/WTL_Project/Images/bac.jpg");
+body.form-page,body.about-us{
+	background:url('bac.jpg');
 	background-size: cover;
 }
 
 body.entry-page{
-	background:url("E:/College/Sem-5/WTL/Projects/WTL_Project/Images/bac-1-edit.jpg");
+	background:url("bac-1-edit.jpg");
 	background-size: cover;
 	vertical-align: middle;
 }
 
+body.opt{
+	background:url("opt.jpg");
+	background-size: cover;
+}
+
+p.about-us{
+	font-size: 30px;
+	position: absolute;
+	width: 100%;
+	vertical-align: middle;
+	text-align: center;
+	margin: auto;
+	top: 35%;
+}
+
 .nav{
-	font-size: 22px;
+	font-size: 28px;
 }
 
 .nav ul {
@@ -29,8 +44,8 @@ body.entry-page{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    padding-top: 30px; 
-    padding-right: 30px;
+    padding-top: 30px;
+    padding-right: 80px;
 }
 
 .nav li {
@@ -43,6 +58,10 @@ body.entry-page{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+.nav li a:hover{
+	text-decoration: line-through;
 }
 
 .tag-line{
@@ -63,10 +82,18 @@ body.entry-page{
 	font-size: 18px;
 	width: 110px;
  	padding: 10px;
- 	background-color: #004400;
+ 	background-color: #5FB446;
  	outline: 0;
  	border: 0;
- 	color: white; 
+ 	color: white;
+}
+.tag-line button a{
+	text-decoration: none;
+}
+
+.tag-line button:hover{
+	background-color: GREY;
+	color: #5FB446;
 }
 
 h1,p{
@@ -79,43 +106,277 @@ a{
 	text-decoration-line: none;
 }
 
-.form{
-	width: 360px;
+/*---------------------Reg&Log---------------------*/
+
+.reg{
+    width: 100%;
+    position: absolute;
+    top: 18%;
+    margin: auto;
+    font-size: 18px;
+    vertical-align: middle;
+    text-align: center;
+    color: #ffffff;
+  }
+  .reg p,.reg a{
+    color: #fff;
+    padding-top: 9px;
+  }
+
+  .reg h4{
+    padding-bottom: 18px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .reg input[type=text]{
+    width: 250px;
+    height: 36px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 18px;
+  }
+
+  .reg input[type=password]{
+    width: 250px;
+    height: 36px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 18px;
+  }
+
+  .reg input[type=submit]{
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #5FB446;
+    outline: 0;
+    border: 0;
+    color: white;
+  }
+
+  .reg input[type=submit]:hover{
+    background-color: white;
+    color: #4CAF50;
+  }
+
+  .reg input[type=text]:focus{
+    outline: none;
+    border: 1px solid #4CAF50;
+  }
+
+  .reg input[type=password]:focus{
+    outline: none;
+    border: 1px solid #4CAF50;
+  }
+
+  .reg input[type=button]:focus{
+    outline: none;
+  }
+/*-----------------Login-----------------*/
+
+.login{
+	width: 100%;
+	position: absolute;
+	top: 36%;
 	margin: auto;
-	padding-top: 50px;
-	color: white;
+	font-size: 18px;
+	vertical-align: middle;
+	text-align: center;
+	color: #ffffff;
+}
+.login p,.login a{
+	color: #fff;
+	padding-top: 9px;
+}
+
+.login h4{
+	padding-bottom: 18px;
+	color: #fff;
+	text-align: center;
+}
+
+.login input[type=text]{
+	width: 250px;
+	height: 36px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	padding: 5px;
+}
+
+.login input[type=password]{
+	width: 250px;
+	height: 36px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	padding: 5px;
+}
+
+.login input[type=submit]{
+	width: 260px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #5FB446;
+    outline: 0;
+    border: 0;
+    color: white;
+}
+
+.login input[type=submit]:hover{
+	background-color: white;
+	color: #4CAF50;
+}
+
+.login input[type=text]:focus{
+	outline: none;
+	border: 1px solid #4CAF50;
+}
+
+.login input[type=password]:focus{
+	outline: none;
+	border: 1px solid #4CAF50;
+}
+
+.login input[type=button]:focus{
+	outline: none;
 }
 
 
-.register-form,.login-form{
-	width: 360px;
-  	padding: 8% 0 0;
-  	margin: auto;
- }
-
-.form button{
-	width: 200px;
- 	padding: 15px;
- 	background-color: #4CAF50;
- 	outline: 0;
- 	border: 0;
- 	color: white;
- }
-
- .form input{
- 	background-color: #f2f2f2;
- 	box-sizing: border-box;
- 	padding: 15px;
- 	font-size: 14px;
- 	border: 0;
- 	color: #ffffff;
- }
+ 
+h4{
+	font-size: 28px;
+	color: #4B4B4B;
+	padding: 0;
+	margin: 0;
+}
 
 a:hover{
 	text-decoration: underline;
+	
 }
 
+/*--------------------Select Form--------------------*/
 
+.select-form{
+	width: 100%;
+	position: absolute;
+	top: 150%;
+	margin: auto;
+	vertical-align: middle;
+	text-align: center;
+	color: #ffffff;
+	font-family: 'Roboto';
+	font-size: 20px;
+}
+.select-form select{
+	width: 200px;
+	height: 50px;
+	padding: 12px;
+	color: #5FB446;
+	background: transparent;
+	font-size: 22px;
+}
+
+.select-form input[type=submit]{
+	width: 200px;
+    font-size: 20px;
+    background-color: #5FB446;
+    outline: 0;
+    border: 0;
+    color: white;
+}
+
+.select-form input[type=submit]:hover{
+	background-color: white;
+	color: #4CAF50;
+}
+/*--------------------xxx--------------------*/
  footer{
  	position: absolute;
  }
+
+.about-us{
+	width: 780px;
+	margin: auto;
+	padding-top: 50px;
+	color: white;
+	text-align: center;
+	font-size: 25px;
+}
+/*--------------sell form---------------------*/
+
+.buy{
+    width: 100%;
+    position: absolute;
+    top: 18%;
+    margin: auto;
+    font-size: 18px;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+}
+  .buy p,.reg a{
+    color: #fff;
+    padding-top: 9px;
+  }
+
+  .buy h4{
+    padding-bottom: 18px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .buy input[type=text]{
+    width: 250px;
+    height: 36px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 2px;
+    color: #5FB446	;
+    font-family: 'Exo', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 18px;
+  }
+
+
+
+.buy input[type=submit]:hover{
+	background-color: white;
+	color: #4CAF50;
+}
+
+.buy input[type=text]:focus{
+	outline: none;
+	border: 1px solid #4CAF50;
+}
+
+.buy input[type=password]:focus{
+	outline: none;
+	border: 1px solid #4CAF50;
+}
+
+.buy input[type=button]:focus{
+	outline: none;
+}

@@ -1,4 +1,4 @@
-function validateForm(){
+function validateRegister(){
 	var Fname = document.forms["myForm"]["fname"].value;
     if (Fname == null || Fname == "") {
         alert("First Name must be filled out");
@@ -23,7 +23,7 @@ function validateForm(){
 	}
 
 	var vemail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-	var e=document.forms["myForm"]["gender"].value;
+	var e=document.forms["myForm"]["email"].value;
 	if(!(vemail.test(e))){
 		alert("Email Invalid");
 		return false;
@@ -35,8 +35,13 @@ function validateForm(){
         alert("Enter the password!");
         return false;
     }
-	
-	/*Log In form starts from here*/
+
+    return true;
+}
+
+/*Log In form starts from here*/
+
+function validateLogin(){
     
     var usrname = document.forms["logForm"]["username"].value;
     if (usrname == null || usrname == "") {
@@ -44,8 +49,11 @@ function validateForm(){
         return false;
     }
 
-
+    var psword = document.forms["logForm"]["password"].value;
+    if (psword == null || psword == "") {
+        alert("Password not entered.");
+        return false;
+    }
 
     return true;
 }
-
